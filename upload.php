@@ -5,9 +5,9 @@
 include 'config.php';
 
 // "submit" is the button name.
-if(isset($_POST['submit'])){  
+if(isset($_POST['submit'])){
 
-  // 'pdf' is the name of input field
+  // this 'pdf' is the name of input field
   $pdf = $_FILES['pdf']['name']; // define name of input
   $pdf_type = $_FILES['pdf']['type']; // define type of input
   $pdf_size = $_FILES['pdf']['size']; // define size of input
@@ -21,6 +21,9 @@ if(isset($_POST['submit'])){
 
   $insertQuery = mysqli_query($connect_db, $insert);
   // execute the function
+
+
+  header("location:index.php");
 }
 
 ?>
