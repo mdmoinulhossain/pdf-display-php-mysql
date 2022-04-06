@@ -26,6 +26,7 @@
 
 <section class="container my-5">
     <div class="row">
+        <h3>Your PDF's:</h3>
         <?php
         include 'config.php';
 
@@ -33,7 +34,7 @@
 
         $displayQuery = mysqli_query($connect_db, $display);
 
-        while($record = mysqli_fetch_array($displayQuery)){
+        if($record = mysqli_fetch_array($displayQuery)){
 
 
         ?>
@@ -43,7 +44,10 @@
                     <button class="btn mybtn mt-3" value="<?php echo $record["pdf"] ?>">Open PDF</button>
                 </a>
             </div>
-            <?php } ?>        
+        
+        <?php } else {
+            echo "<h4>No PDF Found</h4>";
+        } ?>   
     </div>
 </section>
 
