@@ -13,25 +13,51 @@
         .nav-link{
             color: #fff !important;
         }
+        .navbar-toggler{
+            background-color: #fff !important;
+        }
+        .navbar-nav{
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            margin: auto !important;
+        }
+        .nav-item{
+            margin: 0 20px;
+            width: 100px;
+        }
+        .nav-link{
+            background-color: #A9A9A9 !important;
+            color: #fff !important;
+            text-align:center;
+            border-radius: 5px;
+        }
+        .nav-link:hover{
+            background-color: #fff !important;
+            color: #000 !important;
+        }
     </style>
 </head>
 <body>
 <main>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="upload.php">Upload</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="edit.php">Edit</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>    
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="upload.php">Upload</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="edit.php">List</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>   
 </main>
