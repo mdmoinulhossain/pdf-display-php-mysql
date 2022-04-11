@@ -36,6 +36,8 @@
 
         while($record = mysqli_fetch_array($displayQuery)){
 
+            
+            
 
         ?>
             <div class="col-6 col-md-4 singlePdf mx-2">
