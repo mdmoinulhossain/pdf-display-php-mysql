@@ -69,7 +69,7 @@
             <a class="nav-link" href="edit.php">List</a>
           </li>
         </ul>';
-        echo "Hi, ".$_SESSION['emailAddress']." <a href='./admin/logout.php' class='headerText'>Logout</a>";
+        echo "<a href='./admin/logout.php' class='headerText'>Logout</a>";
         } else {
           echo '<span class="headerText">Please Login</span>';
         }       
