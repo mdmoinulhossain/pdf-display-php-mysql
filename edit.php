@@ -44,7 +44,7 @@
                 <tr>
                     <td><?php echo $record["id"] ?></td>
                     <td><embed type="application/pdf" src="pdf/<?php echo $record["pdf"] ?>" class="pdf"></td>
-                    <td id="myInp"><?php echo $url."pdf/".$record["pdf"] ?></td>
+                    <td id="myInp"><?php echo $url."pdf/".$record["pdf"]."#toolbar=0" ?></td>
                 
                     <td><a href="delete.php?id=<?php echo $record['id']; ?>&pdf=<?php echo $record["pdf"]; ?>" class="bi bi-trash3-fill">Delete</a></td>
                 </tr>

@@ -45,7 +45,7 @@
         ?>
             <div class="col-6 col-md-4 singlePdf mx-2">
                 <embed type="application/pdf" src="pdf/<?php echo $record["pdf"] ?>" class="pdf">
-                <a href="<?php echo $record["id"] ?>" target="_blank">
+                <a href="pdf/<?php echo $record["pdf"]."#toolbar=0" ?>" target="_blank">
                     <button class="btn mybtn mt-3">Open PDF</button>
                 </a>
             </div>
