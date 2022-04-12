@@ -1,4 +1,4 @@
-
+<title>PDF Books</title>
 <style>
     body{
         padding: 0 !important;
@@ -30,6 +30,7 @@
         letter-spacing: 3px;
     }
 </style>
+
 
 <section class="home">
     <div class="info">

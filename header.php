@@ -41,6 +41,9 @@
             background-color: #fff !important;
             color: #000 !important;
         }
+        .headerText{
+          color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -51,17 +54,27 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="upload.php">Upload</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="edit.php">List</a>
-        </li>
-      </ul>
+            
+      <?php
+        session_start();
+        if(isset($_SESSION['emailAddress'])){
+          echo '<ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="adminpdf.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="upload.php">Upload</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="edit.php">List</a>
+          </li>
+        </ul>';
+        echo "Hi, ".$_SESSION['emailAddress']." <a href='./admin/logout.php' class='headerText'>Logout</a>";
+        } else {
+          echo '<span class="headerText">Please Login</span>';
+        }       
+      ?>
+      
     </div>
   </div>
 </nav>   
