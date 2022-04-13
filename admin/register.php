@@ -14,12 +14,12 @@ include('../header.php');
     $numRow = mysqli_num_rows($qry);
 
     if($numRow > 0) {
-        echo "<script>alert('User already exists')</script>";
+        echo "<h1 style='color: red; display: flex; justify-content: center;'>User already exists!</h1><span style='display: flex; justify-content: center;'>Go to: <a href='./login.php'>Login.</a></span>";
     } else {
         $insrt = "INSERT INTO authentication(email , password) VALUES ('$email', '$pass')";
         mysqli_query($connect_db,$insrt);
-        echo "<script>alert('Registration successful')</script>";
-        header("Location:index.php");
+        echo "
+        <h1 style='color: green; display: flex; justify-content: center;'>Registration successful.</h1><span style='display: flex; justify-content: center;'>Go to: <a href='./login.php'>Login.</a></span>";
     }    
 }
 ?>

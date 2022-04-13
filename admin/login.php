@@ -10,14 +10,15 @@ include('../header.php');
     $pass = $_POST['PasswordInput'];
     $select = "SELECT * FROM `authentication` WHERE `email` = '$email' && `password` = '$pass'";
     $qry = mysqli_query($connect_db,$select);
-    $numRow = mysqli_num_rows($qry);
+    $numRow = mysqli_num_rows($qry);    
 
     if($numRow > 0) {
         $_SESSION['emailAddress'] = $email;
         header("Location: ../adminpdf.php");
     } else {
-        header("Location: login.php");
-    }    
+        echo "<h1 style='color: red; display: flex; justify-content: center;'>Username or password is incorrect!</h1>";
+    }
+
 }
 
 ?>
@@ -30,7 +31,7 @@ if(isset($_SESSION['emailAddress'])){
 <section class="container my-5">
 <div class="row">
     <h1 class="text-center">Please Login</h1>
-    <div class="col-12 col-md-3"></div>
+     <div class="col-12 col-md-3"></div>
     <form method="post" class="col-12 col-md-6 my-5 authForm">
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address/Username</label>
