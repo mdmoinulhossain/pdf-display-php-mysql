@@ -25,7 +25,10 @@ include('../header.php');
 ?>
 
 <section class="container my-5">
-        <form method="post">
+<div class="row">
+    <h1 class="text-center">Please Sign Up</h1>
+    <div class="col-12 col-md-3"></div>
+        <form method="post" class="col-12 col-md-6 my-5 authForm">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address/Username</label>
                 <input type="text" class="form-control" name="EmailInput" required />                
@@ -33,10 +36,11 @@ include('../header.php');
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
                 <input type="password" class="form-control" name="PasswordInput" required />
-            </div>
-            
-            <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+            </div>                
+            <button type="submit" name="submit" class="btn btn-outline-primary">Submit</button>
         </form>
+    <div class="col-12 col-md-3"></div>
+</div>
 </section>
 
 <?php

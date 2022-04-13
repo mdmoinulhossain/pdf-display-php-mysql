@@ -12,7 +12,7 @@
         width: 100%;
         height: 100vh;       
         background-image: url("./img/homeBanner.webp");
-        background-position: center;
+        background-position: top right;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
@@ -35,7 +35,6 @@
 <section class="home">
     <div class="info">
         <h1>Need any book to read?</h1>
-        <p>Please call: +880 1843-331261</p>
-        <p>Mail us: booklink24@gmail.com</p>
+        <p>Mail us: <br/> booklink24@gmail.com</p>
     </div>
 </section>

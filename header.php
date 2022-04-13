@@ -44,6 +44,11 @@
         .headerText{
           color: #fff;
         }
+        .authForm{
+          background-color: #F0FFFF;
+          padding: 30px 20px;
+          border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -71,7 +76,7 @@
         </ul>';
         echo "<a href='./admin/logout.php' class='headerText'>Logout</a>";
         } else {
-          echo '<span class="headerText">Please Login</span>';
+          echo '<span class="headerText">Admin Panel</span>';
         }       
       ?>
       

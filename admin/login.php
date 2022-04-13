@@ -28,18 +28,22 @@ if(isset($_SESSION['emailAddress'])){
 ?>
 
 <section class="container my-5">
-    <form method="post">
+<div class="row">
+    <h1 class="text-center">Please Login</h1>
+    <div class="col-12 col-md-3"></div>
+    <form method="post" class="col-12 col-md-6 my-5 authForm">
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" name="EmailInput" required/>
+            <label for="exampleInputEmail1" class="form-label">Email address/Username</label>
+            <input type="text" class="form-control" name="EmailInput" required/>
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
             <input type="password" class="form-control" name="PasswordInput" required/>
-        </div>
-        
-        <button type="submit" name="login" class="btn btn-primary">Login</button>
+        </div>        
+        <button type="submit" name="login" class="btn btn-outline-success">Login</button>
     </form>
+    <div class="col-12 col-md-3"></div>
+</div>
 </section>
 
 
