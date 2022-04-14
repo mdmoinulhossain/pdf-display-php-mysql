@@ -43,6 +43,7 @@ if(isset($_SESSION['emailAddress'])){
         </div>        
         <button type="submit" name="login" class="btn btn-outline-success">Login</button>
     </form>
+    <span>Want to <a href="./register.php">Sign Up</a>?</span>
     <div class="col-12 col-md-3"></div>
 </div>
 </section>

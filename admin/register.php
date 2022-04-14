@@ -39,6 +39,7 @@ include('../header.php');
             </div>                
             <button type="submit" name="submit" class="btn btn-outline-primary">Submit</button>
         </form>
+        <span>Want to <a href="./login.php">Login</a>?</span>
     <div class="col-12 col-md-3"></div>
 </div>
 </section>
