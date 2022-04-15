@@ -1,4 +1,10 @@
-<?php include('./header.php'); ?>
+<?php include('./header.php'); 
+
+if(!isset($_SESSION['emailAddress'])){
+    header("location: http://localhost/php/pdf-upload/admin/login.php");
+}
+
+?>
 
 
 <style>

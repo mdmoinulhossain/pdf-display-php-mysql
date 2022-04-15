@@ -1,11 +1,9 @@
-<?php include('./header.php'); ?>
-
 <?php 
 
 include 'config.php';
 
 // "submit" is the button name.
-if(isset($_POST['submit'])){
+// if(isset($_POST['submit'])){
 
   // this 'pdf' is the name of input field
   $pdf = $_FILES['pdf']['name']; // define name of input
@@ -22,19 +20,15 @@ if(isset($_POST['submit'])){
   $insertQuery = mysqli_query($connect_db, $insert);
   // execute the function
 
-
-  header("location:index.php");
-}
+// }
 
 ?>
 
-<section class="container">
+<!-- <section class="container">
 <form class="my-5" action="upload.php" method="POST" enctype="multipart/form-data">  
     <label for="InputPdf" class="form-label">Upload your PDF File</label>
     <input type="file" class="form-control" id="InputPdf" name="pdf" required>
     <br/>
   <input type="submit" value="Upload PDF" name="submit" id="upload" class="btn btn-primary" />
-</form>
+</form> -->
 
-
-<?php include('./footer.php'); ?>

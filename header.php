@@ -58,8 +58,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">            
       <?php
         session_start();
         if(isset($_SESSION['emailAddress'])){
@@ -68,7 +67,7 @@
             <a class="nav-link active" aria-current="page" href="adminpdf.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="upload.php">Upload</a>
+            <a class="nav-link" href="uploadForm.php">Upload</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="edit.php">List</a>

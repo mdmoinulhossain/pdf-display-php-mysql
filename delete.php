@@ -11,7 +11,7 @@ $deleteQuery = mysqli_query($connect_db, $delete);
 
 if($deleteQuery){
 unlink("pdf/$pdfName");
-header("location:index.php");
+header("location: edit.php");
 }
 
 ?>
